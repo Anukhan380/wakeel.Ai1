@@ -1,14 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "api/*.js", "use": "@vercel/node" },
-    { "src": "*.html", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1.js" },
-    { "src": "/admin", "dest": "/admin.html" },
-    { "src": "/lawyer-portal", "dest": "/lawyer-portal.html" },
-    { "src": "/documents", "dest": "/documents.html" },
-    { "src": "/", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/admin", "destination": "/admin.html" },
+    { "source": "/lawyer-portal", "destination": "/lawyer-portal.html" },
+    { "source": "/documents", "destination": "/documents.html" },
+    { "source": "/", "destination": "/index.html" }
   ]
 }
