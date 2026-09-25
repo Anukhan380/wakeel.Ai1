@@ -1,0 +1,6 @@
+{
+  "name": "wakeelai",
+  "version": "2.0.0",
+  "description": "WakeelAI - Pakistani Legal Assistant",
+  "engines": { "node": "18.x" }
+}
